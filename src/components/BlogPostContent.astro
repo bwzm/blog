@@ -3,9 +3,16 @@ import type { CollectionEntry } from 'astro:content'
 import FormattedDate from './FormattedDate.astro'
 import PostSeparator from './PostSeparator.astro'
 
-type Props = CollectionEntry<'blog'>['data'] & { slug: string }
+type Props = { post: CollectionEntry<'blog'> }
 
-const { title, pubDate, updatedDate, slug } = Astro.props
+const {
+	post: {
+		data: { title, pubDate },
+		slug,
+	},
+} = Astro.props
+
+const { Content } = await Astro.props.post.render()
 ---
 
 <article class='w-full max-w-xl text-black prose leading-6 prose-headings:leading-tight'>
@@ -17,15 +24,8 @@ const { title, pubDate, updatedDate, slug } = Astro.props
 	</h1>
 	<div class='flex items-center justify-center'>
 		<FormattedDate date={pubDate} />
-		{
-			updatedDate && (
-				<div class='last-updated-on'>
-					Last updated on <FormattedDate date={updatedDate} />
-				</div>
-			)
-		}
 	</div>
-	<slot />
+	<Content />
 	<div class='mt-10 flex items-center justify-center'>
 		<PostSeparator />
 	</div>

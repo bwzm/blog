@@ -5,26 +5,20 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import BlogPostContent from '../components/BlogPostContent.astro'
 
-type Props = CollectionEntry<'blog'>['data'] & { slug: string }
+type Props = { post: CollectionEntry<'blog'> }
 
-const { title, description, pubDate, updatedDate, slug } = Astro.props
+const { post } = Astro.props
 ---
 
 <html lang='en'>
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={post.data.title} description={post.data.description} />
 	</head>
 
 	<body>
 		<Header />
 		<main class='flex items-center justify-center flex-col p-4 w-full'>
-			<BlogPostContent
-				description={description}
-				title={title}
-				pubDate={pubDate}
-				updatedDate={updatedDate}
-				slug={slug}
-			>
+			<BlogPostContent post={post}>
 				<slot />
 			</BlogPostContent>
 		</main>
