@@ -1,13 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import FormattedDate from './FormattedDate.astro'
 import PostSeparator from './PostSeparator.astro'
 
 type Props = { post: CollectionEntry<'blog'> }
 
 const {
 	post: {
-		data: { title, pubDate },
+		data: { title },
 		slug,
 	},
 } = Astro.props
@@ -22,9 +21,6 @@ const { Content } = await Astro.props.post.render()
 			href={`/blog/${slug}`}>{title}</a
 		>
 	</h1>
-	<div class='flex items-center justify-center'>
-		<FormattedDate date={pubDate} />
-	</div>
 	<Content />
 	<div class='mt-10 flex items-center justify-center'>
 		<PostSeparator />

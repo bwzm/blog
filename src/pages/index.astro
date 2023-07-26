@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content'
 import BlogPostContent from '../components/BlogPostContent.astro'
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(a, b) => (a.id < b.id ? 1 : -1) // Sort by file name
 )
 ---
 
