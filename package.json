@@ -26,6 +26,7 @@
 	"devDependencies": {
 		"@michaelhelvey/eslint-config": "^1.0.0",
 		"@michaelhelvey/prettier-config": "^1.0.0",
+		"@tailwindcss/typography": "^0.5.9",
 		"@types/prettier": "^2.7.3",
 		"eslint": "^8.45.0",
 		"husky": "^8.0.3",

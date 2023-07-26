@@ -2,7 +2,6 @@
 title: 'Third post'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
-heroImage: '/blog-placeholder-2.jpg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore

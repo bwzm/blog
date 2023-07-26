@@ -4,7 +4,6 @@ description:
     'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content
     in Astro.'
 pubDate: 'Jul 01 2022'
-heroImage: '/blog-placeholder-1.jpg'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in
@@ -53,8 +52,8 @@ as annotations and abbreviations.
 
 #### Blockquote without attribution
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae. **Note** that you can use _Markdown
+> syntax_ within a blockquote.
 
 #### Blockquote with attribution
 

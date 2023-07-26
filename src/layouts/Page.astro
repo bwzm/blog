@@ -1,0 +1,39 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import PostSeparator from '../components/PostSeparator.astro'
+
+type Props = {
+	title: string
+	description: string
+}
+
+const { title, description } = Astro.props
+---
+
+<html lang='en'>
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+		<main class='flex items-center justify-center flex-col p-4 w-full'>
+			<section
+				class='w-full max-w-xl text-black prose leading-6 prose-headings:leading-tight'
+			>
+				<h1
+					class='leading-tight mb-2 font-bold text-base text-center no-underline hover:underline'
+				>
+					{title}
+				</h1>
+				<slot />
+				<div class='mt-10 flex items-center justify-center'>
+					<PostSeparator />
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import FormattedDate from './FormattedDate.astro'
+import PostSeparator from './PostSeparator.astro'
+
+type Props = CollectionEntry<'blog'>['data'] & { slug: string }
+
+const { title, pubDate, updatedDate, slug } = Astro.props
+---
+
+<article class='w-full max-w-xl text-black prose leading-6 prose-headings:leading-tight'>
+	<h1 class='text-center leading-tight mb-2'>
+		<a
+			class='font-bold text-base text-center no-underline hover:underline'
+			href={`/blog/${slug}`}>{title}</a
+		>
+	</h1>
+	<div class='flex items-center justify-center'>
+		<FormattedDate date={pubDate} />
+		{
+			updatedDate && (
+				<div class='last-updated-on'>
+					Last updated on <FormattedDate date={updatedDate} />
+				</div>
+			)
+		}
+	</div>
+	<slot />
+	<div class='mt-10 flex items-center justify-center'>
+		<PostSeparator />
+	</div>
+</article>
