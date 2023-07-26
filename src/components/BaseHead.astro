@@ -17,10 +17,12 @@ const { title, description, image = 'background_image.jpg' } = Astro.props
 <meta name='generator' content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel='preload' href='/fonts/PTSerif-Regular.ttf' as='font' type='font/ttf' crossorigin />
-<link rel='preload' href='/fonts/PTSerif-Italic.ttf' as='font' type='font/ttf' crossorigin />
-<link rel='preload' href='/fonts/PTSerif-BoldItalic.ttf' as='font' type='font/ttf' crossorigin />
-<link rel='preload' href='/fonts/PTSerif-Bold.ttf' as='font' type='font/ttf' crossorigin />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link
+	href='https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'
+	rel='stylesheet'
+/>
 
 <!-- Canonical URL -->
 <link rel='canonical' href={canonicalURL} />
