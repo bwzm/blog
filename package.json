@@ -1,18 +1,36 @@
 {
-  "name": "postmodernbenedictine.com",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
-    "@astrojs/rss": "^2.4.3",
-    "@astrojs/sitemap": "^2.0.1",
-    "astro": "^2.9.3"
-  }
+	"name": "postmodernbenedictine.com",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"prepare": "husky install",
+		"format": "prettier --write --ignore-unknown .",
+		"lint": "eslint src/* --fix"
+	},
+	"lint-staged": {
+		"**/*": "prettier --ignore-unknown --write"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^0.19.7",
+		"@astrojs/rss": "^2.4.3",
+		"@astrojs/sitemap": "^2.0.1",
+		"@astrojs/tailwind": "^4.0.0",
+		"astro": "^2.9.3",
+		"tailwindcss": "^3.0.24"
+	},
+	"devDependencies": {
+		"@michaelhelvey/eslint-config": "^1.0.0",
+		"@michaelhelvey/prettier-config": "^1.0.0",
+		"@types/prettier": "^2.7.3",
+		"eslint": "^8.45.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.3",
+		"prettier": "^3.0.0",
+		"prettier-plugin-astro": "^0.11.0"
+	}
 }
