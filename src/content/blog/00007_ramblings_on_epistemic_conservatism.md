@@ -1,5 +1,6 @@
 ---
 title: 'Ramblings on Epistemic Conservatism'
+pubDate: 'Jun 1 2021'
 ---
 
 The last few years should have finally laid to rest the idea of progress, but, I am ashamed to

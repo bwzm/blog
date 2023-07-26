@@ -1,5 +1,6 @@
 ---
 title: 'the dangerous game of causality'
+pubDate: 'Jan 6 2022'
 ---
 
 While reading D. B. Hart’s essay “The Origin of the Specious,” I came across this sentence, which

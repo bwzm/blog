@@ -1,5 +1,6 @@
 ---
 title: 'The Only Valuable Answers'
+pubDate: 'Jun 1 2021'
 ---
 
 > I suppose it would sound somewhat bigoted of me to say that one should generally be suspcious of

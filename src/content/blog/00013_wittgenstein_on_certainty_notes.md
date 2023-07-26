@@ -1,5 +1,6 @@
 ---
 title: 'uncertain notes on certainty, re: wittgenstein'
+pubDate: 'Jan 16, 2022'
 ---
 
 _On Certainty_, a sinuous, monotonous, and indeed, somewhat uncertain collection of notes assembled

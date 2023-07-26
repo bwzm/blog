@@ -1,5 +1,6 @@
 ---
 title: 'freedom of speech inside the prison'
+pubDate: 'Jun 1 2021'
 ---
 
 What line was crossed when Amazon Web Services removed Parler from their servers, after stating that
@@ -88,7 +89,7 @@ Ownership -- physical and intellectual -- matters more than we realize. We've bu
 society on delegating nearly every requirement for life, including speech, to others, and now we
 must reap the consequences. I don't know what a solution looks like, especially because I'm a
 software developer by trade. It's easy to for me to advocate for open source software, and managing
-your own hardeware. I worked on a bootloader for x86 architectures over Christmas. I study operating
+your own hardware. I worked on a bootloader for x86 architectures over Christmas. I study operating
 system and compiler development in my spare time. I write a lot of my own tools, because I enjoy it.
 I built this website. I'm working on setting up on my own server infrastructure in my basement, once
 I own it. I build my own computers from parts. I use Arch Linux. None of these things are causes to

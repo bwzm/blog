@@ -1,6 +1,6 @@
 ---
 title: 'Blog Introduction'
-description: 'Intentions?'
+pubDate: 'Jun 1 2021'
 ---
 
 My intention for this blog is for it to be a reading journal. Perhaps I'll occasionally write about

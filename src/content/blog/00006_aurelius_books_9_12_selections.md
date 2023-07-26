@@ -1,5 +1,6 @@
 ---
 title: 'Aurelius, Books 9-12, Selections'
+pubDate: 'Jun 1 2021'
 ---
 
 9.1 Again, one who pursues pleasure as good and tries to avoid pain as an evil is acting

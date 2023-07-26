@@ -1,5 +1,6 @@
 ---
 title: 'Aurelius, Book 7, Selections'
+pubDate: 'Jun 1 2021'
 ---
 
 7.3 …Keep in mind that a person’s worth is measured by the worth of what he has set his heart on.

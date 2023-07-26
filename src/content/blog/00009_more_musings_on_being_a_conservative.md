@@ -1,5 +1,6 @@
 ---
 title: 'more musings on being a conservative'
+pubDate: 'Jun 1 2021'
 ---
 
 What does it mean to be a conservative, culturally, spritually, or theologically? (I leave aside

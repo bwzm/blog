@@ -1,6 +1,7 @@
 ---
 title: 'Bland Centrism'
 description: 'The rhetorical disadvantage of centrists'
+pubDate: 'Jun 1 2021'
 ---
 
 It’s difficult to uphold the rights, values, desires, and hopes of one group without seeming to

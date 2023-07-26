@@ -1,5 +1,6 @@
 ---
 title: 'Aurelius, Book 8, Selections'
+pubDate: 'Jun 1 2021'
 ---
 
 8.10 Regret is a kind of self-reproach for having let something useful pass you by. Now the good is
